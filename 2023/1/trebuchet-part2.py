@@ -35,11 +35,11 @@ first_substr_found = lambda positions_dict: min({key: value for (key, value) in 
 # First digit found in a string
 first_digit_found = lambda full_string: digit_strings[first_substr_found(positions_of_substrs(full_string,digit_strings))]
 
-# Reverses digit strings
-reversed_digit_strings = {key[::-1]: value for (key, value) in digit_strings.items()}
+# Reverses dictionary keys
+reversed_dict_keys = lambda dict: {key[::-1]: value for (key, value) in dict.items()}
 
 # Last digit found in a string (by matching reversed digit with reversed digit strings dict)
-last_digit_found = lambda full_string: reversed_digit_strings[first_substr_found(positions_of_substrs(full_string[::-1],reversed_digit_strings))]
+last_digit_found = lambda full_string: reversed_dict_keys(digit_strings)[first_substr_found(positions_of_substrs(full_string[::-1],reversed_dict_keys(digit_strings)))]
 
 # Concatenates result of first and last digit for a given string
 calibration_value_string = lambda full_string: first_digit_found(full_string) + last_digit_found(full_string)

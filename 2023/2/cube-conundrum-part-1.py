@@ -1,6 +1,5 @@
 import os
 
-from functools import reduce
 # Define current file location
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__))) + "\\"
 

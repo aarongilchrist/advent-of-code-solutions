@@ -24,7 +24,7 @@ calibration_strings = []
 
 # Read each line in as a separate list item
 with open(input_path) as input_file:
-    calibration_strings = input_file.readlines()
+    calibration_strings = input_file.read().splitlines()
 
 # Function returning dict of the first instance of each substr in a full_str (-1 if not found)
 positions_of_substrs = lambda full_string, substrs: {substr: full_string.find(substr) for substr in substrs}

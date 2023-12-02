@@ -10,7 +10,7 @@ calibration_strings = []
 
 # Read each line in as a separate list item
 with open(input_path) as input_file:
-    calibration_strings = input_file.readlines()
+    calibration_strings = input_file.read().splitlines()
 
 # Define a function to strip non digits from strings
 remove_non_digits = lambda full_str : ''.join(c for c in full_str if c.isdigit())

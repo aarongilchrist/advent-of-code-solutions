@@ -51,7 +51,7 @@ max_colour_dict = lambda colour_list_dicts: {colour: max_colour(colour_list_dict
 # Get max cubes for each game
 max_colour_games = {game[0]: max_colour_dict(game[1]) for game in parse_games(input_strings).items()}
 
-# Multiplies the min number of cubes required to play each game together
+# Multiply the min number of cubes required to play each game together
 game_powers = {game[0]: game[1]['red'] * game[1]['green'] * game[1]['blue'] for game in max_colour_games.items()}
 
 print(sum(game_powers.values()))

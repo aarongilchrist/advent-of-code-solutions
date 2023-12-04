@@ -30,9 +30,6 @@ digit_indices = [(row[0],rowitem[0]) for row in enumerate(char_matrix) for rowit
 # Group indices of digits into sets of adjacents by row
 digit_adjacents_by_row = [[item[1] for item in group] for key,group in itertools.groupby(enumerate(digit_indices),lambda x: (x[1][0],x[0]-x[1][1]))]
 
-# Remove lists of adjacent integers, if not adjacent to a symbol
-#part_number_indices = [index_list for index_list in digit_adjacents_by_row if set(index_list).intersection(symbol_adjacents) != set()]
-
 #Get integer represented by list of indices from character matrix
 get_integer_from_indices = lambda index_list: int(''.join(char_matrix[index[0]][index[1]] for index in index_list))
 

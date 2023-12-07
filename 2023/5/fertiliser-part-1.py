@@ -10,7 +10,7 @@ input_strings = []
 
 # Read each line in as a separate list item
 with open(input_path) as input_file:
-    input_strings = input_file.read().splitlines()#
+    input_strings = input_file.read().splitlines()
 
 # Get list of seeds from first line by using ' ' as a delimiter
 seeds = list(map(int,input_strings[0].split(" ")[1:]))

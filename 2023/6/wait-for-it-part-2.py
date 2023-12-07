@@ -1,5 +1,4 @@
 import os
-import math
 
 # Define current file location
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__))) + "\\"

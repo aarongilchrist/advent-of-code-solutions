@@ -12,3 +12,4 @@ Current progress (2023 challenge):
 - Day 8:    ⭐⭐
 - Day 9:    ⭐⭐
 - Day 10:   ⭐⭐
+- Day 11:   ⭐⭐

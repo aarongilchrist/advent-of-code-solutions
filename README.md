@@ -1,7 +1,7 @@
 # advent-of-code-solutions
 My solutions to the Advent of Code challenge
 
-Current progress (2023 challenge):
+Current progress (2023 challenge) - 37⭐:
 - Day 1:    ⭐⭐
 - Day 2:    ⭐⭐
 - Day 3:    ⭐⭐
@@ -23,7 +23,7 @@ Current progress (2023 challenge):
 - Day 19:   ⭐
 - Day 20:   ⭐
 - Day 21:   ⭐
-- Day 22:   
+- Day 22:   ⭐⭐
 - Day 23:   
 - Day 24:   ⭐
 - Day 25:   
